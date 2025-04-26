@@ -1,23 +1,9 @@
-# import sys
-# from PyQt5.QtWidgets import QApplication, QWidget
-
-# class EEGApp(QWidget):
-#     def __init__(self):
-#         super().__init__()
-#         self.setWindowTitle("EEG Tahlil Dasturi")
-#         self.setGeometry(100, 100, 800, 600)
-
-# if __name__ == "__main__":
-#     app = QApplication(sys.argv)
-#     window = EEGApp()
-#     window.show()
-#     sys.exit(app.exec_())
 import mne
 import matplotlib.pyplot as plt
 
 # 1. EEG faylini yuklash (masalan, .edf fayl)
 # Fayl yo'lini to'g'ri ko'rsatganingizga ishonch hosil qiling
-raw = mne.io.read_raw_edf('subject01.edf', preload=True)
+raw = mne.io.read_raw_edf('D:\\EEG\\data\\subject03.edf', preload=True)
 
 # 2. Filtrlash (1-40 Hz oraliqda)
 raw.filter(1., 40., fir_design='firwin')
