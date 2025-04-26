@@ -23,3 +23,18 @@ def plot_psd(raw):
 # EEG ma'lumotlarini vizualizatsiya qilish
 def plot_data(raw):
     raw.plot(title="EEG Signal")
+if __name__ == "__main__":
+    # Faylni yuklash
+    raw = load_eeg_data("subject03.edf")   # <- Bu senga kerakli edf fayl
+
+    # Filtr
+    raw = filter_data(raw)
+
+    # Referens
+    raw = set_reference(raw)
+
+    # PSD grafigini chizish
+    plot_psd(raw)
+
+    # EEG signalini chizish
+    plot_data(raw)
