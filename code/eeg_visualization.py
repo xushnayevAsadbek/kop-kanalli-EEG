@@ -11,8 +11,8 @@ def save_psd_and_raw_plots(raw):
 
     # PSD grafikasini saqlash
     fig_psd = raw.plot_psd(area_mode='range', tmax=10.0, show=False)
-    fig_psd.savefig('results/psd_plots/psd_signal_4.png')
+    fig_psd.savefig('results/psd_plots/psd_signal_5.png')
 
     # Raw signal grafikasi saqlash
     fig_raw = raw.plot(title="EEG Signal", show=False)
-    fig_raw.savefig('results/raw_plots/raw_signal_4.png')
+    fig_raw.savefig('results/raw_plots/raw_signal_5.png')

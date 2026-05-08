@@ -45,7 +45,7 @@
 import numpy as np
 import pyedflib
 
-file_name = 'D:\\EEG\\data\\subject04.edf' 
+file_name = 'D:\\EEG\\data\\subject05.edf' 
 
 n_channels = 10           # 10 ta kanal
 sampling_rate = 100       # 100 Hz
