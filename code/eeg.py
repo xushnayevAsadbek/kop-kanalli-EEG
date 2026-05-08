@@ -2,7 +2,7 @@ import mne
 import matplotlib.pyplot as plt
 
 # 1. EEG faylini yuklash (masalan, .edf fayl)
-# Fayl yo'lini to'g'ri ko'rsatganingizga ishonch hosil qiling
+
 raw = mne.io.read_raw_edf('D:\\EEG\\data\\subject03.edf', preload=True)
 
 # 2. Filtrlash (1-40 Hz oraliqda)
